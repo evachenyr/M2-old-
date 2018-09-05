@@ -30,8 +30,11 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-		System.out.println("hi");
-	  return null;
+		//modify -> add -> commit -> push
+		//status shows what was changed
+		String a = input.substring(input.length() - 2, input.length());
+		String b = input.substring(0, input.length() - 2);
+	  return a + b;
 	}
 	
 	/**
